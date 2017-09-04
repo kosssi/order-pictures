@@ -1,0 +1,20 @@
+{
+  "name": "order-pictures",
+  "version": "0.1.0",
+  "description": "Create folders with date name for each pictures in folders.",
+  "scripts": {
+    "test": "jest",
+    "build": "babel index.js --out-file build.js",
+    "start": "babel-node index",
+    "watch:test": "jest --watch"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "commander": "^2.11.0",
+    "jest": "^20.0.4"
+  }
+}
