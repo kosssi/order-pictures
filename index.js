@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
-import 'babel-polyfill'
 import program from 'commander'
+import main from './src'
 
 import { version } from './package.json'
 
@@ -10,5 +10,6 @@ program
   .arguments('<dir>')
   .action(async (dir, options) => {
     console.log(`Start: ${dir}`)
+    main(dir)
   })
   .parse(process.argv)
