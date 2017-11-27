@@ -9,7 +9,7 @@ program
   .version(version)
   .arguments('<dir>')
   .action(async (dir, options) => {
-    console.log(`Start: ${dir}`)
+    console.log(`Start with folder '${dir}':`)
     main(dir)
   })
   .parse(process.argv)
